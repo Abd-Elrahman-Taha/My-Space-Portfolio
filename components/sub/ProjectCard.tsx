@@ -23,13 +23,16 @@ const ProjectCard = ({
   animationDelay = 0,
 }: Props) => {
   return (
-    <InView triggerOnce={true}>
+    // تغيير triggerOnce من true إلى false
+    <InView triggerOnce={false} threshold={0.2}>
       {({ inView, ref }) => (
         <motion.div
           ref={ref}
+          // الحالة الابتدائية والحالة عند الخروج من الشاشة
           initial={{ opacity: 0, y: 50 }}
+          // التغيير هنا: لو inView يبقى visible، لو لا يرجع يختفي
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.6, delay: animationDelay }}
+          transition={{ duration: 0.6, delay: inView ? animationDelay : 0 }}
           className="group relative rounded-xl overflow-hidden shadow-lg border border-[#2A0E61] bg-[#030014]"
         >
           {/* Image with hover zoom */}
