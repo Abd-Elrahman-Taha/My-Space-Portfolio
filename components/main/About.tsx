@@ -72,7 +72,7 @@ const About = () => {
                             className="Welcome-box px-[15px] w-[90%] md:w-3/4 py-[8px] z-[20] brder mb-[20px] border-[#7042f88b] opacity-[0.9]"
                         >
                             <h1 className="Welcome-text text-[16px] w-full text-justify">
-                               As a passionate Frontend Developer with expertise in React, Next.js, TypeScript, HTML, and CSS, I excel in crafting seamless, high-performance web applications. My journey includes leading projects and teams where I implemented modern web technologies and delivered engaging user experiences. As a developer, I thrive on creating polished interfaces and optimized code, fostering collaboration and innovation. I'm keen to connect with like-minded tech enthusiasts and visionaries to explore new opportunities and push the boundaries of frontend development.
+                               As a passionate Frontend Developer with expertise in React, Next.js, TypeScript, HTML, and CSS, I excel in crafting seamless, high-performance web applications. My journey includes leading projects and teams where I implemented modern web technologies and delivered engaging user experiences. As a developer, I thrive on creating polished interfaces and optimized code, fostering collaboration and innovation. I&apos;m keen to connect with like-minded tech enthusiasts and visionaries to explore new opportunities and push the boundaries of frontend development.
 
                             </h1>
                         </motion.div>
