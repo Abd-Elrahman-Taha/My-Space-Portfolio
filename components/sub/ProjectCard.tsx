@@ -46,34 +46,37 @@ const ProjectCard = ({
           </div>
 
           {/* Overlay - Appears on Hover */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileHover={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            className="absolute inset-0 z-20 bg-black/80 flex flex-col justify-center items-center p-6 text-center"
-          >
-            <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
-            <p className="text-gray-300 text-sm mb-6 line-clamp-3">{description}</p>
-            
-            <div className="flex gap-4">
-              <a
-                href={liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-sm font-bold rounded-lg hover:scale-105 transition-transform"
-              >
-                Live Site
-              </a>
-              <a
-                href={repoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm font-bold rounded-lg hover:bg-white/20 transition-all"
-              >
-                GitHub
-              </a>
-            </div>
-          </motion.div>
+     {/* Overlay - Appears on Hover (Desktop) and is visible/tappable (Mobile) */}
+<motion.div
+  // Initial state: Hidden on large screens, but you can adjust mobile behavior here
+  initial={{ opacity: 0 }}
+  // whileHover only works well with a mouse
+  whileHover={{ opacity: 1 }}
+  // Use whileTap for mobile support
+  whileTap={{ opacity: 1 }} 
+  transition={{ duration: 0.3 }}
+  className="absolute inset-0 z-20 bg-black/80 flex flex-col justify-center items-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity"
+>
+  <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
+  <p className="text-gray-300 text-sm mb-6 line-clamp-3">{description}</p>
+  
+  <div className="flex gap-4">
+    <a
+      href={liveLink}
+      target="_blank"
+      className="px-4 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-sm font-bold rounded-lg active:scale-95"
+    >
+      Live Site
+    </a>
+    <a
+      href={repoLink}
+      target="_blank"
+      className="px-4 py-2 bg-white/10 border border-white/20 text-white text-sm font-bold rounded-lg active:bg-white/30"
+    >
+      GitHub
+    </a>
+  </div>
+</motion.div>
         </motion.div>
       )}
     </InView>
