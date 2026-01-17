@@ -92,9 +92,15 @@ export const Socials = [
     },
    {
          name: "Resume",
-        src: "/resume.svg",
-        link: "https://drive.google.com/file/d/1f3I3O6shZFHB2-JvR3Jd-xZgfbJCjOPc/view?usp=sharing",
+        src: "/Resume.svg",
+        link: "https://drive.google.com/file/d/1vPjNdvW9T8Mk0j00UKB_-18vAjJSrygt/view?usp=sharing",
+},
+{
+    name: "Gmail",
+    src: "/Gmail.svg",
+    link: "mailto:b0ody66taha@gmail.com",
 }
+
 
 ];
 
