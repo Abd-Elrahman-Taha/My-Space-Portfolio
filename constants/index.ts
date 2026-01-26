@@ -99,7 +99,8 @@ export const Socials = [
     name: "Gmail",
     src: "/Gmail.svg",
     link: "mailto:b0ody66taha@gmail.com",
-}
+},
+
 
 
 ];

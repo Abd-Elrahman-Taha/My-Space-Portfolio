@@ -23,19 +23,20 @@ const Navbar = () => {
                        Abd El-Rahman Taha
                     </span>
                 </a>
+<div className="hidden md:flex max-w-[420px] w-full h-full flex-row items-center justify-between mx-auto pr-12">
 
-                <div className="hidden w-3/6 lg:w-1/3 h-full md:flex flex-row items-center justify-between md:mx-auto lg:pr-12">
                     <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-                        <a href="#about" className="cursor-pointer">
-                            About me
-                        </a>
-                        <a href="#skills" className="cursor-pointer">
-                            Skills
-                        </a>
-                        <a href="#projects" className="cursor-pointer">
-                            Projects
-                        </a>
-                    </div>
+  <a href="#about" className="nav-link">
+    About me
+  </a>
+  <a href="#skills" className="nav-link">
+    Skills
+  </a>
+  <a href="#projects" className="nav-link">
+    Projects
+  </a>
+</div>
+
                 </div>
 
                 <div className="flex flex-row gap-5 text-white">

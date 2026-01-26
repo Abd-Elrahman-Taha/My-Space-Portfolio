@@ -107,7 +107,7 @@ const HeroContent = () => {
                                     initial="hidden"
                                     animate={inView ? "visible" : "hidden"}
                                     variants={slideInFromLeft(0.8)}
-                                    className="text-sm md:text-md text-gray-400 my-5 max-w-[650px] z-30"
+                                    className="text-md md:text-md text-gray-400 my-5 max-w-[650px] z-30"
                                 ><li>Finalist in the Top 100 Frontend Developers Challenge</li>
                                  <li>Ranked within the Top 5,000 on HackerRank for JavaScript & React</li>
                                  <li>Contributed to and completed Hacktoberfest 2024 with open-source projects</li>
@@ -116,20 +116,44 @@ const HeroContent = () => {
                                 </motion.div>
                             )}
                         </InView>
-                        <InView triggerOnce={false}>
-                            {({ inView, ref }) => (
-                                <motion.a
-                                    ref={ref}
-                                    initial="hidden"
-                                    animate={inView ? "visible" : "hidden"}
-                                    href="#about"
-                                    variants={slideInFromLeft(1)}
-                                    className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] z-40"
-                                >
-                                    Learn More!
-                                </motion.a>
-                            )}
-                        </InView>
+                       <div className="flex flex-col gap-4 md:flex-row md:items-center">
+  
+  <InView triggerOnce={false}>
+    {({ inView, ref }) => (
+      <motion.a
+        ref={ref}
+        href="#about"
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={slideInFromLeft(1)}
+        className="py-2 px-8 button-primary text-center text-white
+                   cursor-pointer rounded-lg max-w-[200px] z-40"
+      >
+        Learn More!
+      </motion.a>
+    )}
+  </InView>
+
+  <InView triggerOnce={false}>
+    {({ inView, ref }) => (
+      <motion.a
+        ref={ref}
+        href="https://wa.me/201030246987"
+        target="_blank"
+        rel="noopener noreferrer"
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={slideInFromLeft(1)}
+        className="py-2 px-12 button-primary flex items-center justify-center
+                   text-white cursor-pointer rounded-lg max-w-[200px] z-40"
+      >
+        Hire Me
+      </motion.a>
+    )}
+  </InView>
+
+</div>
+
                     </div>
 
                     <InView triggerOnce={false}>
