@@ -2,8 +2,21 @@
 
 import React from "react";
 import ProjectCard from "../sub/ProjectCard"; // Ensure this path matches your folder structure
-
 const projectData = [
+  {
+    title: "Apple 3D Website",
+    description: "A cinematic Apple-inspired 3D interactive website with scroll animations and product experience.",
+    image: "/Apple.png",
+    liveLink: "https://apple-murex-chi.vercel.app/",
+    repoLink: "https://github.com/Abd-Elrahman-Taha/Apple",
+  },
+  {
+    title: "Blob Mixer",
+    description: "Interactive blob generator/mixer web tool with dynamic visuals and creative controls.",
+    image: "/Blob.png",
+    liveLink: "https://blob-mixer-xi.vercel.app/",
+    repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
+  },
   {
     title: "E-Commerce",
     description: "A simple and interactive e-commerce project built with React. Features Home, Shop, Product Details, Cart, and Login pages.",
