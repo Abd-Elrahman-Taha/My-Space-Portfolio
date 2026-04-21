@@ -25,6 +25,13 @@ const projectData = [
     repoLink: "https://github.com/EbramAyman10/E-commerce-Storefront-with-React",
   },
   {
+    title: "Old Portfolio",
+    description: "A personal portfolio website showcasing my projects, skills, and contact information with a clean and responsive design.",
+    image: "/portfolio.png",
+    liveLink: "https://abd-elrahman-taha.github.io/My-Portfolio/",
+    repoLink: "https://github.com/Abd-Elrahman-Taha/My-Portfolio",
+  },
+  {
     title: "Number Converter & Calculator",
     description: "Smart web tool for base conversion and arithmetic/bitwise operations with modern minimal UI.",
     image: "/calc2.png",
