@@ -93,7 +93,7 @@ export const Socials = [
    {
          name: "Resume",
         src: "/resume.svg",
-        link: "https://drive.google.com/file/d/1nu700VxV6C_gYjklJlYUuJTkbjNLPzwc/view?usp=drive_link",
+        link: "https://drive.google.com/file/d/137Cz0WR__-1z74UM0IphtT1drkPPZqcL/view?usp=drive_link",
 },
 {
     name: "Gmail",

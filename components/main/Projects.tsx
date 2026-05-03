@@ -5,9 +5,9 @@ import ProjectCard from "../sub/ProjectCard"; // Ensure this path matches your f
 const projectData = [
   {
     title: "Apple 3D Website",
-    description: "A cinematic Apple-inspired 3D interactive website with scroll animations and product experience.",
+    description: "An Apple-inspired 3D e-commerce experience with interactive product showcase, smooth scroll animations, and cinematic UI transitions.",
     image: "/Apple.png",
-    liveLink: "https://apple-murex-chi.vercel.app/",
+    liveLink: "https://apple-e-commerce-two.vercel.app/",
     repoLink: "https://github.com/Abd-Elrahman-Taha/Apple",
   },
   {
