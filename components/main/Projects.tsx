@@ -7,7 +7,7 @@ const projectData = [
     title: "Apple 3D Website",
     description: "An Apple-inspired 3D e-commerce experience with interactive product showcase, smooth scroll animations, and cinematic UI transitions.",
     image: "/Apple.png",
-    liveLink: "https://apple-e-commerce-two.vercel.app/",
+    liveLink: "https://apple-e-commerce-gamma.vercel.app/",
     repoLink: "https://github.com/Abd-Elrahman-Taha/Apple",
   },
   {
