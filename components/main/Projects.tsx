@@ -18,6 +18,14 @@ const projectData = [
     repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
   },
   {
+  title: "Todo App",
+  description:
+    "A modern and responsive Todo application that allows users to manage tasks efficiently. Includes add/delete functionality, task completion toggle, and persistent storage using LocalStorage for data saving across sessions.",
+  image: "/todo.png", // add your screenshot in public folder
+  liveLink: "https://todo-app-three-eta-70.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Todo-App",
+},
+  {
     title: "E-Commerce",
     description: "A simple and interactive e-commerce project built with React. Features Home, Shop, Product Details, Cart, and Login pages.",
     image: "/ecommerce.png",
