@@ -21,9 +21,16 @@ const projectData = [
   title: "Todo App",
   description:
     "A modern and responsive Todo application that allows users to manage tasks efficiently. Includes add/delete functionality, task completion toggle, and persistent storage using LocalStorage for data saving across sessions.",
-  image: "/todo.png", // add your screenshot in public folder
+  image: "/todo.png",
   liveLink: "https://todo-app-three-eta-70.vercel.app/",
   repoLink: "https://github.com/Abd-Elrahman-Taha/Todo-App",
+},{
+  title: "Notes App",
+  description:
+    "A modern and responsive notes management web application that allows users to create, edit, and delete notes efficiently. Features persistent storage using LocalStorage to keep notes saved across sessions, with a clean and minimal UI for better productivity.",
+  image: "/note.png",
+  liveLink: "https://notes-app-silk-two.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Notes-App",
 },
   {
     title: "E-Commerce",
