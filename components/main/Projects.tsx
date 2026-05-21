@@ -28,7 +28,7 @@ const projectData = [
   title: "Notes App",
   description:
     "A modern and responsive notes management web application that allows users to create, edit, and delete notes efficiently. Features persistent storage using LocalStorage to keep notes saved across sessions, with a clean and minimal UI for better productivity.",
-  image: "/note.png",
+  image: "/note1.png",
   liveLink: "https://notes-app-silk-two.vercel.app/",
   repoLink: "https://github.com/Abd-Elrahman-Taha/Notes-App",
 },
