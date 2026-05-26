@@ -24,8 +24,10 @@ export default function RootLayout({
             >
                 <StarsCanvas />
                 <Navbar />
-                {children}
-                <Footer />
+                <div className="relative z-[30]">
+                    {children}
+                    <Footer />
+                </div>
             </body>
         </html>
     );

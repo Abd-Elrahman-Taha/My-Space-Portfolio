@@ -22,7 +22,14 @@ const projectData = [
     liveLink: "https://blob-mixer-xi.vercel.app/",
     repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
     techStack: ["JavaScript", "Canvas API"],
-  },
+  },{
+  title: "Personal Portfolio Website",
+  description: "A modern personal portfolio website showcasing projects, skills, and contact information with a clean responsive design, smooth animations, and a dedicated projects section to highlight development work.",
+  image: "/portfolio2.png",
+  liveLink: "https://ahmed-taha.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Ahmed-Portfolio",
+  techStack: ["React.js", "CSS", "JavaScript"],
+},
   {
     title: "Todo App",
     description: "A modern and responsive Todo application with task management, add/delete/complete functionality, LocalStorage persistence, and Light/Dark mode support.",

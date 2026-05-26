@@ -53,6 +53,7 @@ const StarsCanvas = () => (
             camera={{ position: [0, 0, 1] }}
             gl={{ antialias: false, powerPreference: "high-performance" }}
             dpr={[1, 1.5]} // يمنع الرندر بجودة 3x و 4x المرهقة للموبايل
+            style={{ pointerEvents: "none" }}
         >
             <Suspense fallback={null}>
                 <StarBackground />
