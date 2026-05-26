@@ -23,6 +23,13 @@ const projectData = [
     repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
     techStack: ["JavaScript", "Canvas API"],
   },{
+  title: "Modern Developer Portfolio",
+  description: "A sleek and interactive developer portfolio built to showcase projects, technical skills, and professional experience with smooth animations, responsive layouts, modern UI design, and engaging user interactions.",
+  image: "/taha.png",
+  liveLink: "https://taha-portfolio-ruby.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Taha-Portfolio",
+  techStack: ["React.js", "TypeScript", "Framer Motion"],
+},{
   title: "Personal Portfolio Website",
   description: "A modern personal portfolio website showcasing projects, skills, and contact information with a clean responsive design, smooth animations, and a dedicated projects section to highlight development work.",
   image: "/portfolio2.png",
