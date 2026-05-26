@@ -120,7 +120,7 @@ const Projects = () => {
 
       {/* Header */}
       <div className="mb-14 text-center z-10 px-4">
-        <InView triggerOnce={false}>
+        <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <motion.h2
               ref={ref}

@@ -60,7 +60,7 @@ const About = () => {
 
             {/* Section Title */}
             <div className="w-auto h-auto z-[5] mb-12 text-center">
-                <InView triggerOnce={false}>
+                <InView triggerOnce={true}>
                     {({ inView, ref }) => (
                         <motion.div
                             ref={ref}
@@ -74,7 +74,7 @@ const About = () => {
                         </motion.div>
                     )}
                 </InView>
-                <InView triggerOnce={false}>
+                <InView triggerOnce={true}>
                     {({ inView, ref }) => (
                         <motion.p
                             ref={ref}
@@ -93,7 +93,7 @@ const About = () => {
             <div className="flex flex-col lg:flex-row items-start justify-center gap-10 w-full max-w-[1100px] z-20">
 
                 {/* Profile Card */}
-                <InView triggerOnce={false}>
+                <InView triggerOnce={true}>
                     {({ inView, ref }) => (
                         <motion.div
                             ref={ref}
@@ -155,7 +155,7 @@ const About = () => {
                 {/* Right Column */}
                 <div className="flex flex-col gap-6 w-full">
                     {/* Bio */}
-                    <InView triggerOnce={false}>
+                    <InView triggerOnce={true}>
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -181,7 +181,7 @@ const About = () => {
                     </InView>
 
                     {/* Contact Links */}
-                    <InView triggerOnce={false}>
+                    <InView triggerOnce={true}>
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -224,7 +224,7 @@ const About = () => {
                     </InView>
 
                     {/* Certificates */}
-                    <InView triggerOnce={false}>
+                    <InView triggerOnce={true}>
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}

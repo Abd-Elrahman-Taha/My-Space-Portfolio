@@ -8,7 +8,7 @@ import { slideInFromTop, slideInFromLeft } from "@/utils/motion";
 const SkillText = () => {
     return (
         <div className="w-full h-auto pt-16 flex flex-col items-center justify-center text-center">
-            <InView triggerOnce={false}>
+            <InView triggerOnce={true}>
                 {({ inView, ref }) => (
                     <motion.div
                         ref={ref}
@@ -23,7 +23,7 @@ const SkillText = () => {
                 )}
             </InView>
 
-            <InView triggerOnce={false}>
+            <InView triggerOnce={true}>
                 {({ inView, ref }) => (
                     <motion.p
                         ref={ref}

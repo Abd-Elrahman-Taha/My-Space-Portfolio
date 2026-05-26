@@ -40,7 +40,7 @@ interface SkillSectionProps {
 }
 
 const SkillSection = ({ title, icon: Icon, skills, variants }: SkillSectionProps) => (
-    <InView triggerOnce={false}>
+    <InView triggerOnce={true}>
         {({ inView, ref }) => (
             <motion.div
                 ref={ref}
@@ -106,7 +106,7 @@ const Skills = () => {
                     />
 
                     {/* Open Source */}
-                    <InView triggerOnce={false}>
+                    <InView triggerOnce={true}>
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -132,7 +132,7 @@ const Skills = () => {
                 </div>
 
                 {/* Soft Skills */}
-                <InView triggerOnce={false}>
+                <InView triggerOnce={true}>
                     {({ inView, ref }) => (
                         <motion.div
                             ref={ref}

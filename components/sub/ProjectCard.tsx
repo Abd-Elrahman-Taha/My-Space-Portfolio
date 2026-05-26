@@ -37,7 +37,7 @@ const ProjectCard = ({
   }, []);
 
   return (
-    <InView triggerOnce={false} threshold={0.15}>
+    <InView triggerOnce={true} threshold={0.15}>
       {({ inView, ref }) => (
         <motion.div
           ref={ref}
