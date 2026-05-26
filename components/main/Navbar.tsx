@@ -1,65 +1,174 @@
-import { Socials } from "@/constants";
+"use client";
 
+import { Socials } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+    const [mobileOpen, setMobileOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const navLinks = [
+        { href: "#about", label: "About" },
+        { href: "#skills", label: "Skills" },
+        { href: "#experience", label: "Experience" },
+        { href: "#projects", label: "Projects" },
+    ];
+
     return (
-        <div className="w-screen md:w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 m-0 max-w-[1855px] items-center rounded-full">
-            <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[0px] md:px-[10px]">
-                <a
-                    href="#home"
-                    className="h-auto w-auto flex flex-row items-center"
+        <>
+            {/* Main Navbar */}
+            <nav
+                className={`navbar-glass w-screen md:w-full fixed top-0 left-0 z-50 ${scrolled ? "scrolled" : ""}`}
+                style={{ maxWidth: "1855px", left: "50%", transform: "translateX(-50%)" }}
+            >
+                <div
+                    className="w-full h-[72px] flex flex-row items-center justify-between px-5 md:px-10 mx-auto"
                 >
-                   <Image
-  src="/abdelrahman.jpg"
-  alt="logo"
-  width={50}
-  height={50}
-  className="cursor-pointer hover:animate-spin w-10 h-10 rounded-full object-cover shadow-lg border border-[#2A0E61]"
-/>
+                    {/* Logo / Name */}
+                    <a
+                        href="#home"
+                        className="flex flex-row items-center gap-3 group"
+                    >
+                        <div className="relative">
+                            <div className="absolute inset-0 rounded-full bg-violet-500/30 blur-md group-hover:bg-violet-500/50 transition-all duration-300" />
+                            <Image
+                                src="/abdelrahman.jpg"
+                                alt="Abd El-Rahman Taha"
+                                width={42}
+                                height={42}
+                                className="relative w-[42px] h-[42px] rounded-full object-cover border-2 border-violet-500/40 group-hover:border-violet-400/70 transition-all duration-300 shadow-[0_0_14px_rgba(109,40,217,0.4)]"
+                            />
+                        </div>
+                        <div className="flex flex-col leading-tight">
+                            <span className="font-bold text-white text-[15px] tracking-wide group-hover:text-violet-200 transition-colors duration-300">
+                                Abd El-Rahman
+                            </span>
+                            <span className="text-violet-400/80 text-[11px] font-medium tracking-widest uppercase">
+                                Developer
+                            </span>
+                        </div>
+                    </a>
 
-                    <span className="font-bold ml-[10px] block text-gray-300 z-50 md:text-lg text-xl">
-                       Abd El-Rahman Taha
-                    </span>
-                </a>
-<div className="hidden md:flex max-w-[420px] w-full h-full flex-row items-center justify-between mx-auto pr-12">
+                    {/* Desktop Nav Links */}
+                    <div className="hidden md:flex items-center">
+                        <div className="flex items-center gap-1 bg-white/[0.03] border border-white/[0.07] rounded-full px-3 py-1.5">
+                            {navLinks.map((link) => (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    className="nav-link"
+                                >
+                                    {link.label}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
 
-                    <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-  <a href="#about" className="nav-link">
-    About me
-  </a>
-  <a href="#skills" className="nav-link">
-    Skills
-  </a>
-  <a href="#projects" className="nav-link">
-    Projects
-  </a>
-</div>
+                    {/* Right: Socials + Mobile Toggle */}
+                    <div className="flex flex-row items-center gap-4">
+                        {/* Social Icons */}
+                        <div className="hidden sm:flex flex-row items-center gap-3">
+                            {Socials.map((social) => (
+                                <a
+                                    href={social.link}
+                                    key={social.name}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title={social.name}
+                                    className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/[0.04] border border-white/[0.08] hover:bg-violet-500/20 hover:border-violet-500/40 hover:shadow-[0_0_12px_rgba(109,40,217,0.35)] transition-all duration-300 group"
+                                >
+                                    <Image
+                                        src={social.src}
+                                        alt={social.name}
+                                        width={16}
+                                        height={16}
+                                        className="opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                                    />
+                                </a>
+                            ))}
+                        </div>
 
-                </div>
-
-                <div className="flex flex-row gap-5 text-white">
-                    {Socials.map((social) => (
+                        {/* Hire Me CTA */}
                         <a
-                            href={social.link}
-                            key={social.name}
+                            href="https://wa.me/201030246987"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="hidden md:flex items-center gap-2 px-4 py-2 button-primary rounded-full text-sm text-white"
                         >
-                            <Image
-                                src={social.src}
-                                alt={social.name}
-                                key={social.name}
-                                width={24}
-                                height={24}
-								className="cursor-pointer hover:animate-spin"
-                            />
+                            Hire Me
                         </a>
-                    ))}
+
+                        {/* Mobile Menu Toggle */}
+                        <button
+                            onClick={() => setMobileOpen((prev) => !prev)}
+                            className="flex md:hidden w-9 h-9 items-center justify-center rounded-lg bg-white/[0.05] border border-white/[0.1] hover:bg-violet-500/20 hover:border-violet-500/40 transition-all duration-300 text-white"
+                            aria-label="Toggle mobile menu"
+                        >
+                            {mobileOpen ? (
+                                <RiCloseLine className="text-xl" />
+                            ) : (
+                                <RiMenuLine className="text-xl" />
+                            )}
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </div>
+
+                {/* Mobile Dropdown */}
+                {mobileOpen && (
+                    <div className="md:hidden border-t border-white/[0.06] bg-[#030014]/90 backdrop-blur-xl px-5 py-4 flex flex-col gap-2">
+                        {navLinks.map((link) => (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                onClick={() => setMobileOpen(false)}
+                                className="block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-violet-500/15 hover:border-violet-500/30 border border-transparent text-sm font-medium transition-all duration-200"
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                        <div className="mt-2 pt-3 border-t border-white/[0.06] flex items-center gap-3">
+                            {Socials.map((social) => (
+                                <a
+                                    href={social.link}
+                                    key={social.name}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title={social.name}
+                                    className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/[0.05] border border-white/[0.08] hover:bg-violet-500/20 hover:border-violet-500/40 transition-all duration-300"
+                                >
+                                    <Image
+                                        src={social.src}
+                                        alt={social.name}
+                                        width={16}
+                                        height={16}
+                                        className="opacity-70 hover:opacity-100 transition-opacity"
+                                    />
+                                </a>
+                            ))}
+                        </div>
+                        <a
+                            href="https://wa.me/201030246987"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMobileOpen(false)}
+                            className="mt-2 button-primary text-center text-white text-sm font-semibold py-3 px-6 rounded-xl"
+                        >
+                            Hire Me
+                        </a>
+                    </div>
+                )}
+            </nav>
+        </>
     );
 };
 

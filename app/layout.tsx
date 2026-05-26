@@ -8,8 +8,8 @@ import Footer from "@/components/main/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Portfolio",
-    description: "My portfolio",
+    title: "Abd El-Rahman Taha",
+    description: "Front-End & 3D Web Developer | React | Next.js | Three.js — Portfolio of Abd El-Rahman Taha",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
                 <StarsCanvas />
                 <Navbar />
                 {children}
-                {/* <Footer /> */}
+                <Footer />
             </body>
         </html>
     );

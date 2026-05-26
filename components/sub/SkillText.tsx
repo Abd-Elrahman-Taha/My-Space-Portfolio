@@ -1,16 +1,13 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
-import {
-	slideInFromLeft,
-    slideInFromRight,
-    slideInFromTop,
-} from "@/utils/motion";
 import { InView } from "react-intersection-observer";
+import { slideInFromTop, slideInFromLeft } from "@/utils/motion";
 
 const SkillText = () => {
     return (
-        <div className="w-full h-auto pt-20 flex flex-col items-center justify-center">
+        <div className="w-full h-auto pt-16 flex flex-col items-center justify-center text-center">
             <InView triggerOnce={false}>
                 {({ inView, ref }) => (
                     <motion.div
@@ -18,28 +15,25 @@ const SkillText = () => {
                         initial="hidden"
                         animate={inView ? "visible" : "hidden"}
                         variants={slideInFromTop}
-                        className="text-[40px] pt-[5rem] pb-3 md:p-0 font-medium text-center text-gray-200 z-50"
+                        className="text-[40px] font-extrabold text-white z-50 tracking-tight"
                     >
-                        My
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                            {" "}
-                            Skills{" "}
-                        </span>
+                        My{" "}
+                        <span className="text-accent">Skills</span>
                     </motion.div>
                 )}
             </InView>
 
             <InView triggerOnce={false}>
                 {({ inView, ref }) => (
-                    <motion.div
+                    <motion.p
                         ref={ref}
                         initial="hidden"
                         animate={inView ? "visible" : "hidden"}
                         variants={slideInFromLeft(0.5)}
-                        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
+                        className="text-gray-400 text-base mb-10 mt-3 max-w-md"
                     >
-                        Never miss a task, deadline or idea
-                    </motion.div>
+                        Technologies and tools I use to build modern web experiences
+                    </motion.p>
                 )}
             </InView>
         </div>

@@ -30,52 +30,16 @@ export const Skill_data = [
         height: 80,
     },
     {
-        skill_name: "Redux",
-        Image: "/redux.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "React Query",
-        Image: "/reactquery.png",
-        width: 80,
-        height: 80,
-    },
-    {
         skill_name: "Type Script",
         Image: "/ts.png",
         width: 80,
         height: 80,
     },
     {
-        skill_name: "Next js 13",
+        skill_name: "Next js",
         Image: "/next.png",
         width: 80,
         height: 80,
-    },
-    {
-        skill_name: "Framer Motion",
-        Image: "/framer.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "Stripe Payment",
-        Image: "/stripe.webp",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "Node js",
-        Image: "/node-js.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "Mongo db",
-        Image: "/mongodb.png",
-        width: 40,
-        height: 40,
     },
 ];
 
@@ -90,19 +54,16 @@ export const Socials = [
         src: "/github.svg",
         link: "https://github.com/Abd-Elrahman-Taha",
     },
-   {
-         name: "Resume",
+    {
+        name: "Resume",
         src: "/resume.svg",
         link: "https://drive.google.com/file/d/1kjsyfQTYWwyUYqu6ApjTEQSYyIJH6mL8/view?usp=sharing",
-},
-{
-    name: "Gmail",
-    src: "/Gmail.svg",
-    link: "mailto:b0ody66taha@gmail.com",
-},
-
-
-
+    },
+    {
+        name: "Gmail",
+        src: "/Gmail.svg",
+        link: "mailto:b0ody66taha@gmail.com",
+    },
 ];
 
 export const Frontend_skill = [
@@ -115,8 +76,8 @@ export const Frontend_skill = [
     {
         skill_name: "Css",
         Image: "/css.png",
-        width: 60,
-        height: 60,
+        width: 55,
+        height: 55,
     },
     {
         skill_name: "Java Script",
@@ -127,8 +88,8 @@ export const Frontend_skill = [
     {
         skill_name: "Tailwind Css",
         Image: "/tailwind.png",
-        width: 60,
-        height: 60,
+        width: 55,
+        height: 55,
     },
     {
         skill_name: "React",
@@ -143,7 +104,7 @@ export const Frontend_skill = [
         height: 50,
     },
     {
-        skill_name: "Next js 13",
+        skill_name: "Next js",
         Image: "/next.png",
         width: 55,
         height: 55,
@@ -151,13 +112,6 @@ export const Frontend_skill = [
 ];
 
 export const Backend_skill = [
-    {
-        skill_name: "Django",
-        Image: "/django.svg",
-        width: 60,
-        height: 60,
-    },
-
     {
         skill_name: "Postger SQL",
         Image: "/postger.png",
@@ -170,24 +124,18 @@ export const Backend_skill = [
         width: 45,
         height: 45,
     },
-    {
-        skill_name: "Supabase",
-        Image: "/supabase.svg",
-        width: 40,
-        height: 40,
-    },
-    {
-        skill_name: "Fire base",
-        Image: "/Firebase.png",
-        width: 35,
-        height: 35,
-    },
 ];
 
 export const DevTools = [
     {
-        skill_name: "GitHub",
+        skill_name: "Git",
         Image: "/gitwhite.png",
+        width: 50,
+        height: 50,
+    },
+    {
+        skill_name: "GitHub",
+        Image: "/github.svg",
         width: 50,
         height: 50,
     },
@@ -204,20 +152,8 @@ export const DevTools = [
         height: 40,
     },
     {
-        skill_name: "Railway",
-        Image: "/railway.svg",
-        width: 50,
-        height: 50,
-    },
-    {
         skill_name: "VS Code",
         Image: "/vs.svg",
-        width: 50,
-        height: 50,
-    },
-    {
-        skill_name: "ChatGPT",
-        Image: "/chatgpt.svg",
         width: 50,
         height: 50,
     },
@@ -231,21 +167,21 @@ export const libraries = [
         height: 50,
     },
     {
+        skill_name: "ThreeJs",
+        Image: "/threejs.png",
+        width: 50,
+        height: 50,
+    },
+    {
         skill_name: "React Icon",
         Image: "/icons.svg",
-        width: 60,
-        height: 60,
+        width: 55,
+        height: 55,
     },
     {
         skill_name: "JWT",
         Image: "/jwt.svg",
         width: 60,
         height: 60,
-    },
-    {
-        skill_name: "ThreeJs",
-        Image: "/threejs.png",
-        width: 50,
-        height: 50,
     },
 ];
