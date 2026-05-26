@@ -28,8 +28,7 @@ const Navbar = () => {
         <>
             {/* Main Navbar */}
             <nav
-                className={`navbar-glass w-screen md:w-full fixed top-0 left-0 z-50 ${scrolled ? "scrolled" : ""}`}
-                style={{ maxWidth: "1855px", left: "50%", transform: "translateX(-50%)" }}
+                className={`navbar-glass w-full fixed top-0 left-0 z-50 ${scrolled ? "scrolled" : ""}`}
             >
                 <div
                     className="w-full h-[72px] flex flex-row items-center justify-between px-5 md:px-10 mx-auto"

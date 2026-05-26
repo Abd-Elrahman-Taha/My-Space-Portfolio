@@ -47,7 +47,7 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed inset-0 z-[20] pointer-events-none">
+    <div className="w-full h-auto fixed inset-0 z-[40] pointer-events-none">
         {/* تحسين 3: إضافة dpr لتقليل جودة الرندر على الشاشات العالية لتخفيف الحمل */}
         <Canvas 
             camera={{ position: [0, 0, 1] }}
