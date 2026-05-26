@@ -55,7 +55,7 @@ const ExperienceEducation = () => {
                                 initial="hidden"
                                 animate={inView ? "visible" : "hidden"}
                                 variants={slideInFromLeft(0.3)}
-                                className="relative p-6 md:p-8 rounded-2xl border border-violet-500/20 bg-[#030014]/60 backdrop-blur-xl shadow-[0_8px_40px_rgba(109,40,217,0.1)] hover:border-violet-500/40 transition-all duration-300 group"
+                                className="experience-card-glow p-6 md:p-8 group"
                             >
                                 {/* Active Indicator (purple, not green) */}
                                 <div className="absolute top-6 right-6 flex items-center gap-2">
@@ -120,7 +120,7 @@ const ExperienceEducation = () => {
                                 initial="hidden"
                                 animate={inView ? "visible" : "hidden"}
                                 variants={slideInFromRight(0.3)}
-                                className="relative p-6 md:p-8 rounded-2xl border border-indigo-500/20 bg-[#030014]/60 backdrop-blur-xl shadow-[0_8px_40px_rgba(79,70,229,0.1)] hover:border-indigo-500/40 transition-all duration-300 group"
+                                className="education-card-glow p-6 md:p-8 group"
                             >
                                 <span className="px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-400/10 rounded-full border border-indigo-400/25">
                                     Bachelor&apos;s Degree
