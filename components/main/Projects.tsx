@@ -16,6 +16,14 @@ const projectData = [
     techStack: ["React.js", "Three.js", "GSAP"],
   },
   {
+  title: "Reflex Test Game",
+  description: "A fast-paced reflex testing web app that measures user reaction speed in real time. Features instant feedback, score tracking, LocalStorage persistence for saving highest scores, responsive UI, and an interactive gameplay experience to challenge and improve reaction time.",
+  image: "/reflex.png",
+  liveLink: "https://reflex-test-seven.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Reflex-Test",
+  techStack: ["React.js", "TypeScript", "LocalStorage"],
+},
+  {
     title: "Blob Mixer",
     description: "Interactive blob generator/mixer web tool with dynamic visuals and creative controls.",
     image: "/Blob.png",
@@ -23,14 +31,14 @@ const projectData = [
     repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
     techStack: ["JavaScript", "Canvas API"],
   },{
-  title: "Modern Developer Portfolio",
+  title: "Civil Engineer Portfolio",
   description: "A sleek and interactive developer portfolio built to showcase projects, technical skills, and professional experience with smooth animations, responsive layouts, modern UI design, and engaging user interactions.",
   image: "/taha.png",
   liveLink: "https://taha-portfolio-ruby.vercel.app/",
   repoLink: "https://github.com/Abd-Elrahman-Taha/Taha-Portfolio",
   techStack: ["React.js", "TypeScript", "Framer Motion"],
 },{
-  title: "Personal Portfolio Website",
+  title: "DevOps Portfolio Website",
   description: "A modern personal portfolio website showcasing projects, skills, and contact information with a clean responsive design, smooth animations, and a dedicated projects section to highlight development work.",
   image: "/portfolio2.png",
   liveLink: "https://ahmed-taha.vercel.app/",
