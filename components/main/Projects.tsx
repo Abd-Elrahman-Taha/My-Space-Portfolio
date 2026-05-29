@@ -44,6 +44,22 @@ const projectData = [
   liveLink: "https://ahmed-taha.vercel.app/",
   repoLink: "https://github.com/Abd-Elrahman-Taha/Ahmed-Portfolio",
   techStack: ["React.js", "CSS", "JavaScript"],
+},{
+  title: "QuickRevision",
+  description:
+    "A professional Spaced Repetition & Focused Study Companion designed to enhance long-term memory retention using Active Recall and SRS principles. Includes a Recall Arena with interactive 3D flashcards, a Pomodoro Focus Timer with session tracking, a Mastery Analytics Dashboard with performance charts, and Study Sticky Notes with persistent local storage support. Built to optimize learning efficiency and cognitive retention through structured study sessions and intelligent review scheduling.",
+  image: "/quick.png",
+  liveLink: "https://quick-revision-seven.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Quick-Revision",
+  techStack: [
+    "React.js",
+    "TypeScript",
+    "LocalStorage",
+    "Spaced Repetition System",
+    "Recharts",
+    "Web Audio API",
+    "CSS/Tailwind",
+  ],
 },
   {
     title: "Todo App",
