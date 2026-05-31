@@ -15,22 +15,8 @@ const projectData = [
     repoLink: "https://github.com/Abd-Elrahman-Taha/Apple-E-Commerce",
     techStack: ["React.js", "Three.js", "GSAP"],
   },
-  {
-  title: "Reflex Test Game",
-  description: "A fast-paced reflex testing web app that measures user reaction speed in real time. Features instant feedback, score tracking, LocalStorage persistence for saving highest scores, responsive UI, and an interactive gameplay experience to challenge and improve reaction time.",
-  image: "/reflex.png",
-  liveLink: "https://reflex-test-seven.vercel.app/",
-  repoLink: "https://github.com/Abd-Elrahman-Taha/Reflex-Test",
-  techStack: ["React.js", "TypeScript", "LocalStorage"],
-},
-  {
-    title: "Blob Mixer",
-    description: "Interactive blob generator/mixer web tool with dynamic visuals and creative controls.",
-    image: "/Blob.png",
-    liveLink: "https://blob-mixer-xi.vercel.app/",
-    repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
-    techStack: ["JavaScript", "Canvas API"],
-  },{
+
+ {
   title: "Civil Engineer Portfolio",
   description: "A sleek and interactive developer portfolio built to showcase projects, technical skills, and professional experience with smooth animations, responsive layouts, modern UI design, and engaging user interactions.",
   image: "/taha.png",
@@ -44,6 +30,28 @@ const projectData = [
   liveLink: "https://ahmed-taha.vercel.app/",
   repoLink: "https://github.com/Abd-Elrahman-Taha/Ahmed-Portfolio",
   techStack: ["React.js", "CSS", "JavaScript"],
+},  {
+  title: "Reflex Test Game",
+  description: "A fast-paced reflex testing web app that measures user reaction speed in real time. Features instant feedback, score tracking, LocalStorage persistence for saving highest scores, responsive UI, and an interactive gameplay experience to challenge and improve reaction time.",
+  image: "/reflex.png",
+  liveLink: "https://reflex-test-seven.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Reflex-Test",
+  techStack: ["React.js", "TypeScript", "LocalStorage"],
+},{
+  title: "Study Timer Dashboard",
+  description:
+    "A productivity-focused Study Timer Dashboard designed to improve focus and time management using the Pomodoro technique. The app allows users to switch between Focus, Short Break, and Long Break sessions while tracking study time and building consistent learning habits. It provides real-time countdowns, session state management, and persistent data storage using LocalStorage to keep track of progress even after refreshing. The project is designed to simulate a real productivity workflow and help users study with better structure and discipline.",
+  image: "/timer.png",
+  liveLink: "https://timer-gamma-five.vercel.app/",
+  repoLink: "https://github.com/Abd-Elrahman-Taha/Timer",
+  techStack: [
+    "React.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "LocalStorage",
+    "State Management",
+    "Pomodoro Technique",
+  ],
 },{
   title: "QuickRevision",
   description:
@@ -60,7 +68,14 @@ const projectData = [
     "Web Audio API",
     "CSS/Tailwind",
   ],
-},
+}, {
+    title: "Blob Mixer",
+    description: "Interactive blob generator/mixer web tool with dynamic visuals and creative controls.",
+    image: "/Blob.png",
+    liveLink: "https://blob-mixer-xi.vercel.app/",
+    repoLink: "https://github.com/Abd-Elrahman-Taha/Blob-Mixer",
+    techStack: ["JavaScript", "Canvas API"],
+  },
   {
     title: "Todo App",
     description: "A modern and responsive Todo application with task management, add/delete/complete functionality, LocalStorage persistence, and Light/Dark mode support.",
