@@ -123,7 +123,7 @@ const HeroContent = () => {
                     className="flex items-center gap-6 mt-4 pt-5 border-t border-white/[0.06]"
                 >
                     {[
-                        { value: "10+", label: "Projects" },
+                        { value: "15+", label: "Projects" },
                         { value: "3+", label: "Years Learning" },
                         { value: "DEPI", label: "Certified" },
                     ].map((stat, i) => (
